@@ -212,7 +212,7 @@ export default function Day(props) {
       <View style={[styles.dayWrapper, customContainerStyle]}>
         <TouchableOpacity
           disabled={!enableDateChange}
-          style={[customDateStyle, daySelectedStyle, propSelectedDayStyle]}
+          style={[daySelectedStyle, propSelectedDayStyle]}
           onPress={() => onPressDay(day)}
         >
           <Text
@@ -240,7 +240,7 @@ export default function Day(props) {
                 width: 5,
                 height: 5,
                 borderRadius: 5,
-                backgroundColor: customDateStyle,
+                backgroundColor: customDateStyle.backgroundColor,
               }}
             />
           ) : null}
